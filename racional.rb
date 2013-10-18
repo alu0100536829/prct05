@@ -9,7 +9,11 @@ class Fraccion
 		raise unless a.is_a?(Numeric)
 		raise unless b.is_a?(Numeric)
 		raise unless (b != 0)
-			@a, @b = a, b
+		
+		k = gcd(a,b)
+		a /= k
+		b /= k
+		@a, @b = a, b
 	end
 	
 	def to_s
