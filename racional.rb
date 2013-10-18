@@ -8,7 +8,7 @@ class Fraccion
 	def initialize(a, b)
 		raise unless a.is_a?(Numeric)
 		raise unless b.is_a?(Numeric)
-		raise unless (a != 0)
+		raise unless (b != 0)
 			@a, @b = a, b
 	end
 	
